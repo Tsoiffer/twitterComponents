@@ -1,24 +1,90 @@
 .followCard {
-  background-color: rgba(59, 59, 59, 0.562);
+  background-color: #16181C;
+  min-height: 48px;
+  padding: 0px;
   display: flex;
+  align-items: center; 
+}
+.followCard:hover{
+  background-color: #1D1F23;
 }
 .followCard-img {
   width: 48px;
   height: 48px;
   border-radius: 1000px;
   margin: 3px;
+  margin-left: 10px;
 }
 .followCard-text {
-  height: 48px;
   font-size: 0.8rem;
+  margin-left: 5px;
 }
 .followCard-text h5 {
+  font-size: 14px;
   margin: 0px;
 }
+.followCard-text h5:hover {
+  text-decoration: underline;
+
+}
 .followCard-text span {
+  font-size: 14px;
   margin: 0px;
+  color: #4A4E51;
 }
 .followCard button {
   height: 30px;
+  min-width: 32px;
   margin: 0px;
+  margin-left: 50px;
+  margin-right: 15px;
+  
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.followCard button span{
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0px;
+  margin: 0px;
+  align-items: center;
+  text-align: center;
+}
+
+
+.following{
+max-width: 100px;
+padding-left: 15px;
+padding-right: 15px;
+background-color: #1D1F23;
+color: #E1E3E4;
+border-color: #8b8b8b;
+border-style: solid;
+}
+.following:hover .followingText{
+  display: none;
+}
+.stopFollow{
+  display: none;
+}
+.following:hover .stopFollow{
+  display: block;
+}
+.following:hover {
+  max-width: 150px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #c23411;
+  color: #E1E3E4;
+  border-color: #8b8b8b;
+  border-style: solid;
+  transition: .1s ease background-color;
+  }
+.unfollow{
+  max-width: 78px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #D7DBDC;
 }

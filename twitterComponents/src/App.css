@@ -9,8 +9,8 @@ body {
 .whoFollow {
   align-items: center;
   min-height: 30vh;
-  min-width: 30vw;
-  background-color: rgb(87, 87, 87);
+  min-width: 40vw;
+  background-color: #16181C;
   border-radius: 2vh;
 }
 .whoFollow h3 {

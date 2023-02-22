@@ -1,19 +1,33 @@
 import "./TwitterFollowCard.css";
+import { useState } from "react";
 
-export function TwitterFollowCard() {
-  const user = { name: "TomasSoiffer", userName: "@tomassoiffer" };
+export function TwitterFollowCard({imgLink,name,userName,initialIsFollowing}) {
+  
+  const [isFollowing, setIsFollowing] = useState(initialIsFollowing)
+  const text = isFollowing ? 'Siguiendo' : 'Seguir'
+  const classButton = isFollowing ? 'following' : 'unfollow'
+  const handleClick = () => { 
+    setIsFollowing(!isFollowing)
+  }
   return (
     <div className="followCard">
       <img
         className="followCard-img"
-        src="https://pbs.twimg.com/profile_images/1282207374707761152/FipRN1k7_400x400.jpg"
+        src={imgLink}
         alt="profileImage"
       />
       <span className="followCard-text">
-        <h5>{user.name}</h5>
-        <span>{user.userName}</span>
+        <h5>{name}</h5>
+        <span>{userName}</span>
       </span>
-      <button>Seguir</button>
+      <button className={classButton} onClick={handleClick} >
+        <span className="followingText">
+        {text}
+        </span> 
+        <span className="stopFollow">
+        Dejar de seguir
+        </span> 
+        </button>
     </div>
   );
 }
