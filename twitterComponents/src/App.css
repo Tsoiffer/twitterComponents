@@ -1,0 +1,20 @@
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-family: system-ui;
+  background-color: black;
+  color: aliceblue;
+}
+.whoFollow {
+  align-items: center;
+  min-height: 30vh;
+  min-width: 30vw;
+  background-color: rgb(87, 87, 87);
+  border-radius: 2vh;
+}
+.whoFollow h3 {
+  text-align: start;
+  padding-top: 10px;
+  margin-left: 10px;
+}

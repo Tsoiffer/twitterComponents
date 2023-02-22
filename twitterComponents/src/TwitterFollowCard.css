@@ -1,0 +1,24 @@
+.followCard {
+  background-color: rgba(59, 59, 59, 0.562);
+  display: flex;
+}
+.followCard-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 1000px;
+  margin: 3px;
+}
+.followCard-text {
+  height: 48px;
+  font-size: 0.8rem;
+}
+.followCard-text h5 {
+  margin: 0px;
+}
+.followCard-text span {
+  margin: 0px;
+}
+.followCard button {
+  height: 30px;
+  margin: 0px;
+}
