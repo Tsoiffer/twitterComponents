@@ -78,13 +78,17 @@ border-style: solid;
   padding-right: 15px;
   background-color: #c23411;
   color: #E1E3E4;
-  border-color: #8b8b8b;
+  border-color: #c23411;
   border-style: solid;
-  transition: .1s ease background-color;
+  transition: .3s ease background-color;
   }
 .unfollow{
   max-width: 78px;
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: #D7DBDC;
+}
+.unfollow:hover {
+  border-color: #D7DBDC;
+  opacity: 0.8;
 }
